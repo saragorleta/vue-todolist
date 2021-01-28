@@ -38,7 +38,9 @@
   </div>
 
 
-  <h3>Lista Elementi eliminati <i class="fas fa-trash-alt" @click = "finalElimination(index)"></i></h3>
+  <h3 v-for="(todo, index) in todosfinalElimination">{{todo}} 
+    <i class="fas fa-trash-alt" @click = "finalElimination(index)"></i>
+  </h3>
 
   <div class=todos-container>
     <ul>
