@@ -28,9 +28,9 @@
 
   <div class="todos-container">
     <ul>
-      <li class="todo"v-for="todo in todos">{{todo}}
-      <i class="far fa-times-circle"></i></li>
-
+      <li class="todo" v-for="(todo,index) in todos">
+      <i class="far fa-times-circle" @click = "deleteTodo(index)"></i>
+      </li>
     </ul>
   </div>
 
