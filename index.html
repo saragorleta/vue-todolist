@@ -22,24 +22,30 @@
   </div>
 
   <div class="new-todo">
-    <input type="text">
-    <button>Aggiungi</button>
+    <input type="text" @keyup.enter="addTodo" v-model="newTodo"
+    placeholder="Inserisci un dato">
+    <button @click="addTodo">Aggiungi</button>
   </div>
 
   <div class="todos-container">
-    <ul>
+    <ul v-if="todos.length > 0">
       <li class="todo" v-for="(todo,index) in todos">
+        {{todo}}
       <i class="far fa-times-circle" @click = "deleteTodo(index)"></i>
       </li>
     </ul>
+    <h3 v-else>Lista vuota</h3>
   </div>
 
-  <h3>Lista Elementi eliminati <i class="fas fa-trash-alt"></i></h3>
+
+  <h3>Lista Elementi eliminati <i class="fas fa-trash-alt" @click = "finalElimination(index)"></i></h3>
 
   <div class=todos-container>
     <ul>
-        <li>
-
+        <li class="todo" v-for="(todo,index) in todosEliminati">
+          {{ index + 1 + ') ' + todo}}
+        <i class="fas fa-trash-restore" @click = "restoreTodos(index)"></i>
+        <i class="far fa-times-circle"></i>
         </li>
     </ul>
   </div>

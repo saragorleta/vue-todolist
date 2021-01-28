@@ -29,10 +29,16 @@
   min-width: 40%;
   margin-right:15px;
 }
+.new-todo input:focus{
+  outline:0;
+}
 .new-todo button{
   padding:10px 20px;
   border-radius:20px;
   cursor:pointer;
+}
+.new-todo button{
+    outline:0;
 }
 button:hover{
   background-color: lightgrey;
@@ -59,7 +65,7 @@ cursor:pointer;
 }
 .todo i{
   float:right;
-  
+  padding-right: 20px;
 }
 h3{
   margin-left:50px;
