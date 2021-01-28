@@ -1,0 +1,63 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+.container{
+  margin:0 auto;
+  width: 70%;
+  height:100vh;
+
+}
+.logo{
+  margin:20px;
+  text-align:center;
+
+}
+.logo img{
+  width: 30%;
+}
+.new-todo{
+  text-align: center;
+}
+.new-todo input{
+  padding:10px 20px;
+  border-radius:20px;
+  border-width: 1px;
+  min-width: 40%;
+  margin-right:15px;
+}
+.new-todo button{
+  padding:10px 20px;
+  border-radius:20px;
+  cursor:pointer;
+}
+.todos-container{
+  background-color: lightgreen;
+  border-radius: 20px;
+  border-width: 1px;
+  margin:50px;
+  padding:40px;
+}
+
+.todos-container ul{
+  list-style: none;
+}
+
+.todo{
+border-bottom: 1px solid grey;
+padding:10px;
+cursor:pointer;
+}
+.todo:hover{
+  background-color: lightgrey;
+}
+.todo i{
+  float:right;
+  padding:20px;
+}
+h3{
+  margin-left:50px;
+}
