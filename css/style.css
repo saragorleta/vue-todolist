@@ -70,3 +70,16 @@ cursor:pointer;
 h3{
   margin-left:50px;
 }
+.buttons{
+  padding:10px 20px;
+  border-radius:20px;
+  cursor:pointer;
+  margin-left:50px;
+  margin-top:20px;
+}
+.buttons{
+    outline:0;
+}
+.buttons i{
+  padding-left: 10px;
+}

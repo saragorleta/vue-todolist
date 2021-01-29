@@ -13,8 +13,6 @@ var app= new Vue({
     ],
 
     todosEliminati:[],
-
-    todosfinalElimination:[]
   },
 
 methods: {
@@ -35,10 +33,17 @@ methods: {
   this.todosEliminati.splice(index,1);
 },
 // ELIMINAZIONE DEFINITIVA
-finalElimination(index){
-this.todosEliminati.push(this.todosfinalElimination[index]);
-this.todosfinalElimination.splice(index,1);
+confermaDelete() {
+  var testo;
+  var r = confirm("Press a button!");
+  if (r == true) {
+    testo = "elemento cancellato!";
+  document.getElementById("demo").innerHTML = txt;
 }
+finalElimination(index){
+this.todosEliminati.splice(index,1);
+},
+
 }
 
 });

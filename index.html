@@ -38,16 +38,17 @@
   </div>
 
 
-  <h3 v-for="(todo, index) in todosfinalElimination">{{todo}} 
-    <i class="fas fa-trash-alt" @click = "finalElimination(index)"></i>
+  <h3>Lista Elementi eliminati
+
   </h3>
+  <button class="buttons" @click="finalElimination">Elimina definitivamente<i class="fas fa-trash-alt"></i></button>
 
   <div class=todos-container>
     <ul>
         <li class="todo" v-for="(todo,index) in todosEliminati">
           {{ index + 1 + ') ' + todo}}
         <i class="fas fa-trash-restore" @click = "restoreTodos(index)"></i>
-        <i class="far fa-times-circle"></i>
+
         </li>
     </ul>
   </div>
